@@ -22,12 +22,27 @@
         height: 20.5vh;
     }
     
+    .containerboton {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn {
+        width: 40vh;
+        height: 8vh;
+    }
+    
     .fila {
         height: 20vh;
     }
     
     .ocultar {
         display: none;
+    }
+    
+    .titulo {
+        margin-top: 10%;
+        /* margin-left: 40px; */
     }
     
     .ocultar2 {
@@ -42,11 +57,13 @@
 <body>
     <div class="container-fluid titulo">
         <div class="row">
-            <div class="col-6">
+            <div class="col">
                 <h1 class="  alert alert-primary">Vamos a jugar</h1>
             </div>
-            <div class="col-3"><button id="empezar" class="btn btn-primary ">Empezar</button></div>
         </div>
+    </div>
+    <div class="container containerboton">
+        <button id="empezar" class="btn btn-primary ">Empezar</button>
     </div>
     <div>
         <p><b class="ocultar turnos">Turnos: </b>
