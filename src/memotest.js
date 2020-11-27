@@ -1,7 +1,3 @@
-/*
--verificar que las cartas seleccionadas queden bloqueadas sin funciones 
--tambien verificar la parte de ganador 
--verificar bugs*/
 let $felicitaciones = document.querySelector('.felicitaciones')
 let $turnos = document.querySelector('.turnos')
 let $ganaste = document.querySelector('.ganaste')
