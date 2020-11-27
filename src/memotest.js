@@ -17,6 +17,7 @@ let gris = ' #2b2929'
 $empezar.addEventListener('click', comenzarJuego);
 
 function comenzarJuego() {
+    $empezar.classList += ' ocultar'
     $tablero.classList.remove('ocultar')
     $mostrarTurno.classList.remove('ocultar')
     $titulo.classList += ' ocultar';
@@ -46,12 +47,10 @@ function mezclarVoltear() {
 
 function felicitaciones() {
 
-    // let color = $arraycolumnas[index].getAttribute('style')
-
     $tablero.classList += ' ocultar'
     $felicitaciones.classList.remove('ocultar2')
     $ganaste.classList.remove('ocultar2')
-    console.log('FELICITACIONEEEES!!!');
+
 
 }
 
