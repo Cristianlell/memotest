@@ -8,43 +8,104 @@
     <title>Memotest</title>
 </head>
 <style>
-    .col-sm-3 {
-        background: rgb(88, 88, 88);
-        height: 25vh;
+    body {
+        background-color: blueviolet;
+    }
+    
+    .turnos,
+    .mostrarTurno {
+        color: white;
+    }
+    
+    .col-4 {
+        background: #8d8b8b;
+        height: 20.5vh;
+    }
+    
+    .fila {
+        height: 20vh;
+    }
+    
+    .ocultar {
+        display: none;
+    }
+    
+    .ocultar2 {
+        display: none;
+    }
+    
+    h1 {
+        text-align: center;
     }
 </style>
 
 <body>
-    <div class="tablero container-fluid">
+    <div class="container-fluid titulo">
         <div class="row">
-            <div class="col-sm-3 border"></div>
-            <div class="col-sm-3 border"></div>
-            <div class="col-sm-3 border"></div>
-            <div class="col-sm-3 border"></div>
+            <div class="col-6">
+                <h1 class="  alert alert-primary">Vamos a jugar</h1>
+            </div>
+            <div class="col-3"><button id="empezar" class="btn btn-primary ">Empezar</button></div>
         </div>
-        <div class="row">
-            <div class="col-sm-3 border"></div>
-            <div class="col-sm-3 border"></div>
-            <div class="col-sm-3 border"></div>
-            <div class="col-sm-3 border"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 border"></div>
-            <div class="col-sm-3 border"></div>
-            <div class="col-sm-3 border"></div>
-            <div class="col-sm-3 border"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 border"></div>
-            <div class="col-sm-3 border"></div>
-            <div class="col-sm-3 border"></div>
-            <div class="col-sm-3 border"></div>
-        </div>
+    </div>
+    <div>
+        <p><b class="ocultar turnos">Turnos: </b>
+            <b class="aciertos"></b>
+            <b class="ocultar mostrarTurno">turnos</b>
 
-
-
+        </p>
+        <h2 class="felicitaciones alert alert-success display-3 ocultar2"><b> FELICIDADES..!!</b> <br>
+            <span class="ganaste display-4 ocultar2"><b>Ganaste en</b> </span><b class="aciertos"></b>
+        </h2>
 
     </div>
+    <div class="tablero container ocultar">
+        <div class="row fila border">
+            <div class="col-4 border">
+
+            </div>
+            <div class="col-4 border ">
+
+            </div>
+            <div class="col-4 border ">
+
+            </div>
+        </div>
+        <div class="row fila">
+            <div class="col-4 border ">
+
+            </div>
+            <div class="col-4 border ">
+
+            </div>
+            <div class="col-4 border ">
+
+            </div>
+        </div>
+        <div class="row fila">
+            <div class="col-4 border ">
+
+            </div>
+            <div class="col-4 border">
+
+            </div>
+            <div class="col-4 border ">
+
+            </div>
+        </div>
+        <div class="row fila">
+            <div class="col-4 border ">
+
+            </div>
+            <div class="col-4 border ">
+
+            </div>
+            <div class="col-4 border ">
+
+            </div>
+        </div>
+    </div>
+
     <script src="src/memotest.js"></script>
 </body>
 
