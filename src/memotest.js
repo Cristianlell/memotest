@@ -105,6 +105,7 @@ function chequear(cartasElegidas) {
                     if (e.id == uno) {
                         setInterval(() => {
                             e.style.background = gris
+                            e.classList.remove('carta')
                             e.removeAttribute('id')
                             e.removeEventListener('click', voltear)
 
